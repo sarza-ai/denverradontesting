@@ -1,15 +1,21 @@
 (function () {
-  const navToggle = document.querySelector('.nav-toggle');
-  const siteNav = document.querySelector('.site-nav');
-  const navLinks = siteNav.querySelectorAll('a');
+  const header = document.getElementById('site-header');
+  const navToggle = document.getElementById('nav-toggle');
+  const siteNav = document.getElementById('site-nav');
   const form = document.getElementById('contact-form');
   const formStatus = document.getElementById('form-status');
   const yearEl = document.getElementById('year');
 
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Header scroll effect
+  function onScroll() {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile nav
   function closeNav() {
     navToggle.classList.remove('is-open');
     siteNav.classList.remove('is-open');
@@ -24,7 +30,7 @@
     navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
   });
 
-  navLinks.forEach(function (link) {
+  siteNav.querySelectorAll('a').forEach(function (link) {
     link.addEventListener('click', closeNav);
   });
 
@@ -32,6 +38,20 @@
     if (e.key === 'Escape') closeNav();
   });
 
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+  revealEls.forEach(function (el) { observer.observe(el); });
+
+  // Contact form
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -59,7 +79,7 @@
       window.location.href = 'mailto:DenverRadonTesting@Gmail.com?subject=' + subject + '&body=' + body;
 
       formStatus.className = 'form-note success';
-      formStatus.textContent = 'Opening your email client. If it did not open, email us at DenverRadonTesting@Gmail.com';
+      formStatus.textContent = 'Opening your email client… If it didn\'t open, email us directly at DenverRadonTesting@Gmail.com';
     });
   }
 })();

@@ -1,212 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Denver Radon Testing - NRPP certified radon testing for homeowners, inspectors, schools, and multiunit buildings. Same-day results. Call 303-907-1563.">
-  <title>Denver Radon Testing | Trusted Radon Testing Experts</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denver Radon Testing | Certified Radon Specialists</title>
+  <meta name="description" content="NRPP Certified and Colorado Licensed radon testing in Denver. Independent testing only — no mitigation sales. Same-day results. Serving homeowners, inspectors & commercial properties." />
+  <meta property="og:title" content="Denver Radon Testing | Certified Radon Specialists" />
+  <meta property="og:description" content="NRPP Certified, Colorado Licensed. Independent radon testing — no mitigation upsells. Same-day results for real estate transactions." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Denver Radon Testing",
+    "description": "NRPP Certified and Colorado DORA Licensed radon testing specialists serving Denver and surrounding areas.",
+    "telephone": "303-907-1563",
+    "email": "DenverRadonTesting@Gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Denver", "addressRegion": "CO", "addressCountry": "US" },
+    "areaServed": "Denver Metropolitan Area",
+    "serviceType": "Radon Testing"
+  }
+  </script>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a href="#top" class="logo">
-        <span class="logo-icon" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-            <path d="M10 16h12M16 10v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+
+<!-- ─── HEADER ───────────────────────────────────────────────── -->
+<header class="site-header" id="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="Denver Radon Testing home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
           </svg>
-        </span>
-        <span class="logo-text">Denver Radon Testing</span>
+        </div>
+        <div class="logo-text">
+          Denver Radon Testing
+          <span>NRPP Certified · CO Licensed</span>
+        </div>
       </a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav">
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-        <a href="tel:3039071563" class="nav-cta">303-907-1563</a>
+        <a href="#contact" class="nav-cta">Get Tested</a>
       </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container hero-content">
-        <p class="hero-eyebrow">NRPP Certified &middot; Colorado Licensed</p>
-        <h1>Your trusted radon testing experts in Denver</h1>
+<!-- ─── HERO ─────────────────────────────────────────────────── -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-glow-radon" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Copy -->
+      <div class="hero-copy">
+        <div class="hero-eyebrow">Denver Metro's Radon Specialists</div>
+
+        <h1>Know your home is<br /><em>truly safe to breathe.</em></h1>
+
         <p class="hero-lead">
-          Born from a home inspection company, Denver Radon Testing is your premiere choice for all your radon testing needs. Perfect for inspectors and homeowners alike, and professionally suited for large multiunit buildings such as apartments and schools.
+          Radon is the second leading cause of lung cancer in the U.S. — and it's invisible.
+          We provide certified, independent testing with fast results and zero pressure to buy anything else.
         </p>
+
         <div class="hero-actions">
-          <a href="tel:3039071563" class="btn btn-primary">
-            Call or Text: 303-907-1563
+          <a href="#contact" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.67a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            Schedule Testing
           </a>
-          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+          <a href="#services" class="btn btn-ghost">Learn How It Works</a>
         </div>
-        <ul class="hero-stats">
-          <li>
-            <strong>Same-day</strong>
-            <span>Results after pickup</span>
-          </li>
-          <li>
-            <strong>Testing only</strong>
-            <span>No mitigation upsells</span>
-          </li>
-          <li>
-            <strong>All building types</strong>
-            <span>Homes to schools</span>
-          </li>
-        </ul>
-      </div>
-    </section>
 
-    <section class="services" id="services">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">What we offer</p>
-          <h2>Explore what we offer</h2>
-          <p class="section-desc">Professional radon testing tailored to your property, from quick real estate transactions to large-scale commercial needs.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="8" y="12" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2"/>
-                <path d="M16 20h16M16 26h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="34" cy="28" r="3" fill="currentColor"/>
-              </svg>
-            </div>
-            <h3>Continuous Radon Monitors</h3>
-            <p>Performed with the most current model of RADStar monitors, our continuous radon monitor tests are perfect whether you're a homeowner looking for information or in a real estate deal.</p>
-            <ul class="service-features">
-              <li>Latest RADStar monitor technology</li>
-              <li>Ideal for real estate transactions</li>
-              <li>Results sent same day monitor is picked up</li>
-              <li>No more missed deadlines</li>
-            </ul>
-          </article>
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 8v28M28 8v28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <ellipse cx="24" cy="38" rx="8" ry="3" stroke="currentColor" stroke-width="2"/>
-              </svg>
-            </div>
-            <h3>Liquid Scintillation Vials</h3>
-            <p>Dealing with a larger area? Liquid scintillation vials are designed for your larger testing needs. Perfect for schools, daycares, and multiunit housing.</p>
-            <ul class="service-features">
-              <li>Built for larger testing areas</li>
-              <li>Schools, daycares and multiunit housing</li>
-              <li>More accurate than charcoal tests</li>
-              <li>Scalable for commercial properties</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="container about-grid">
-        <div class="about-content">
-          <p class="section-eyebrow">Who we are</p>
-          <h2>Radon testing is all we do</h2>
-          <p>At Denver Radon Testing, we specialize in all forms of radon testing. Because radon testing is our sole focus, you can be confident in your results knowing we are not trying to sell you a radon mitigation system.</p>
-          <p>Whether you're a home inspector needing reliable partner testing, a homeowner concerned about indoor air quality, or a facility manager responsible for a school or apartment complex, we deliver accurate, unbiased results you can trust.</p>
-          <a href="tel:3039071563" class="btn btn-primary">Schedule a test today</a>
-        </div>
-        <div class="about-visual" aria-hidden="true">
-          <div class="about-card">
-            <span class="about-card-label">Our promise</span>
-            <p>Independent testing with no conflict of interest. Your results, your decision.</p>
+        <div class="hero-proof">
+          <div class="proof-item">
+            <span class="proof-number">Same<br>Day</span>
+            <span class="proof-label">Results available</span>
           </div>
-          <div class="about-card about-card-accent">
-            <span class="about-card-label">Fast turnaround</span>
-            <p>Same-day results when your continuous monitor is picked up.</p>
+          <div class="proof-item">
+            <span class="proof-number">100%</span>
+            <span class="proof-label">Independent testing</span>
+          </div>
+          <div class="proof-item">
+            <span class="proof-number">All</span>
+            <span class="proof-label">Building types served</span>
+          </div>
+          <div class="proof-item">
+            <span class="proof-number">NRPP</span>
+            <span class="proof-label">Certified #109551-RT</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="certifications" id="certifications">
-      <div class="container">
-        <div class="cert-grid">
-          <div class="cert-item">
-            <span class="cert-badge">NRPP</span>
-            <div>
-              <h3>NRPP Certified</h3>
-              <p>Certification #109551-RT</p>
-            </div>
-          </div>
-          <div class="cert-item">
-            <span class="cert-badge">DORA</span>
-            <div>
-              <h3>DORA Colorado</h3>
-              <p>License RME0000042</p>
-            </div>
-          </div>
-        </div>
+      <!-- Illustration -->
+      <div class="hero-visual">
+        <svg class="hero-illustration" viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+          <!-- Sky gradient -->
+          <defs>
+            <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#0c2018"/>
+              <stop offset="100%" stop-color="#071510"/>
+            </linearGradient>
+            <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1a2e1e"/>
+              <stop offset="100%" stop-color="#0e1c11"/>
+            </linearGradient>
+            <linearGradient id="houseGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1c3228"/>
+              <stop offset="100%" stop-color="#142b1f"/>
+            </linearGradient>
+            <linearGradient id="roofGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#12c17a" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#0b9a61"/>
+            </linearGradient>
+            <radialGradient id="monitorGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#12c17a" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#12c17a" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+              <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+
+          <!-- Background -->
+          <rect width="520" height="440" fill="url(#skyGrad)" rx="16"/>
+
+          <!-- Stars -->
+          <circle cx="40" cy="30" r="1.2" fill="white" opacity="0.4"/>
+          <circle cx="120" cy="18" r="1.5" fill="white" opacity="0.3"/>
+          <circle cx="220" cy="28" r="1" fill="white" opacity="0.5"/>
+          <circle cx="340" cy="15" r="1.3" fill="white" opacity="0.35"/>
+          <circle cx="450" cy="25" r="1.1" fill="white" opacity="0.4"/>
+          <circle cx="490" cy="48" r="0.9" fill="white" opacity="0.3"/>
+          <circle cx="80" cy="55" r="1" fill="white" opacity="0.25"/>
+          <circle cx="400" cy="42" r="1.4" fill="white" opacity="0.3"/>
+
+          <!-- Ground / soil -->
+          <rect x="0" y="300" width="520" height="140" rx="0" fill="url(#groundGrad)"/>
+          <!-- Grass line -->
+          <rect x="0" y="298" width="520" height="5" fill="#1e3d22" rx="2"/>
+          <!-- Soil texture lines -->
+          <line x1="30" y1="330" x2="90" y2="330" stroke="#1f3523" stroke-width="1.5" opacity="0.6"/>
+          <line x1="150" y1="345" x2="210" y2="345" stroke="#1f3523" stroke-width="1.5" opacity="0.6"/>
+          <line x1="280" y1="335" x2="360" y2="335" stroke="#1f3523" stroke-width="1.5" opacity="0.6"/>
+          <line x1="400" y1="355" x2="480" y2="355" stroke="#1f3523" stroke-width="1.5" opacity="0.6"/>
+          <line x1="60" y1="365" x2="140" y2="365" stroke="#1f3523" stroke-width="1" opacity="0.4"/>
+          <line x1="240" y1="380" x2="300" y2="380" stroke="#1f3523" stroke-width="1" opacity="0.4"/>
+
+          <!-- Radon gas (orange particles rising from ground) -->
+          <!-- Particle group 1 -->
+          <circle class="rp" cx="130" cy="295" r="5" fill="#f97316" opacity="0.75" style="--d:0s; --dx:-12px"/>
+          <circle class="rp" cx="170" cy="290" r="3.5" fill="#fb923c" opacity="0.65" style="--d:0.8s; --dx:8px"/>
+          <circle class="rp" cx="150" cy="285" r="4" fill="#f97316" opacity="0.5" style="--d:1.5s; --dx:-5px"/>
+          <!-- Particle group 2 -->
+          <circle class="rp" cx="250" cy="295" r="4.5" fill="#f97316" opacity="0.7" style="--d:0.4s; --dx:10px"/>
+          <circle class="rp" cx="280" cy="288" r="3" fill="#fb923c" opacity="0.55" style="--d:1.2s; --dx:-8px"/>
+          <circle class="rp" cx="265" cy="292" r="5.5" fill="#ea580c" opacity="0.45" style="--d:2s; --dx:5px"/>
+          <!-- Particle group 3 -->
+          <circle class="rp" cx="360" cy="295" r="4" fill="#f97316" opacity="0.7" style="--d:0.6s; --dx:-10px"/>
+          <circle class="rp" cx="385" cy="289" r="3.5" fill="#fb923c" opacity="0.6" style="--d:1.8s; --dx:12px"/>
+
+          <!-- House body -->
+          <rect x="100" y="190" width="320" height="115" fill="url(#houseGrad)" rx="2"/>
+          <!-- House outline -->
+          <rect x="100" y="190" width="320" height="115" fill="none" stroke="rgba(18,193,122,0.25)" stroke-width="1.5" rx="2"/>
+
+          <!-- Basement / foundation -->
+          <rect x="105" y="298" width="310" height="25" fill="#0e1f14" rx="1"/>
+          <rect x="105" y="298" width="310" height="25" fill="none" stroke="rgba(18,193,122,0.15)" stroke-width="1"/>
+
+          <!-- Roof -->
+          <polygon points="80,192 260,90 440,192" fill="url(#roofGrad)" opacity="0.9"/>
+          <polygon points="80,192 260,90 440,192" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+          <!-- Chimney -->
+          <rect x="330" y="108" width="28" height="55" fill="#1c3228" stroke="rgba(18,193,122,0.2)" stroke-width="1"/>
+
+          <!-- Windows left -->
+          <rect x="125" y="218" width="65" height="52" rx="4" fill="#0a1f16" stroke="rgba(18,193,122,0.35)" stroke-width="1.5"/>
+          <line x1="157" y1="218" x2="157" y2="270" stroke="rgba(18,193,122,0.2)" stroke-width="1"/>
+          <line x1="125" y1="244" x2="190" y2="244" stroke="rgba(18,193,122,0.2)" stroke-width="1"/>
+          <!-- Window glow -->
+          <rect x="125" y="218" width="65" height="52" rx="4" fill="rgba(18,193,122,0.04)"/>
+
+          <!-- Door -->
+          <rect x="218" y="234" width="50" height="71" rx="4" fill="#0a1f16" stroke="rgba(18,193,122,0.35)" stroke-width="1.5"/>
+          <circle cx="262" cy="270" r="3" fill="rgba(18,193,122,0.6)"/>
+          <!-- Door arch -->
+          <path d="M218 238 Q243 220 268 238" fill="none" stroke="rgba(18,193,122,0.25)" stroke-width="1"/>
+
+          <!-- Windows right -->
+          <rect x="330" y="218" width="65" height="52" rx="4" fill="#0a1f16" stroke="rgba(18,193,122,0.35)" stroke-width="1.5"/>
+          <line x1="362" y1="218" x2="362" y2="270" stroke="rgba(18,193,122,0.2)" stroke-width="1"/>
+          <line x1="330" y1="244" x2="395" y2="244" stroke="rgba(18,193,122,0.2)" stroke-width="1"/>
+          <rect x="330" y="218" width="65" height="52" rx="4" fill="rgba(18,193,122,0.04)"/>
+
+          <!-- Radon Monitor device (inside house, right side) -->
+          <g filter="url(#glow)" transform="translate(360, 230)">
+            <ellipse cx="0" cy="0" rx="40" ry="40" fill="url(#monitorGlow)"/>
+          </g>
+          <rect x="348" y="222" width="52" height="38" rx="6" fill="#0b3d26" stroke="#12c17a" stroke-width="1.5"/>
+          <!-- Screen -->
+          <rect x="353" y="227" width="42" height="20" rx="3" fill="#071510"/>
+          <!-- RADStar display -->
+          <text x="374" y="240" font-family="monospace" font-size="9" fill="#12c17a" text-anchor="middle" font-weight="bold">1.8</text>
+          <text x="374" y="249" font-family="monospace" font-size="5.5" fill="rgba(18,193,122,0.5)" text-anchor="middle">pCi/L</text>
+          <!-- LEDs -->
+          <circle cx="357" cy="252" r="2.5" fill="#12c17a" opacity="0.9"/>
+          <circle cx="365" cy="252" r="2.5" fill="#12c17a" opacity="0.5"/>
+          <circle cx="373" cy="252" r="2.5" fill="rgba(18,193,122,0.2)"/>
+          <!-- Monitor stand -->
+          <rect x="369" y="260" width="10" height="5" rx="1" fill="#0b3d26" stroke="#12c17a" stroke-width="1"/>
+          <rect x="363" y="265" width="22" height="3" rx="1.5" fill="#0b3d26" stroke="#12c17a" stroke-width="1"/>
+
+          <!-- Result label -->
+          <rect x="338" y="272" width="70" height="18" rx="9" fill="rgba(18,193,122,0.15)" stroke="rgba(18,193,122,0.4)" stroke-width="1"/>
+          <text x="373" y="284" font-family="sans-serif" font-size="7" fill="#12c17a" text-anchor="middle" font-weight="700">SAFE LEVEL</text>
+
+          <!-- "RADON" label on ground -->
+          <rect x="200" y="355" width="120" height="22" rx="11" fill="rgba(249,115,22,0.15)" stroke="rgba(249,115,22,0.35)" stroke-width="1"/>
+          <text x="260" y="370" font-family="sans-serif" font-size="8.5" fill="#f97316" text-anchor="middle" font-weight="700" letter-spacing="2">RADON GAS</text>
+
+          <!-- Measurement arrows (radon rising) -->
+          <line x1="260" y1="295" x2="260" y2="250" stroke="rgba(249,115,22,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+          <polygon points="256,252 260,244 264,252" fill="rgba(249,115,22,0.4)"/>
+        </svg>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="contact" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-info">
-          <p class="section-eyebrow">Contact us</p>
-          <h2>Let's work together</h2>
-          <p>Interested in working together? Fill out the form and we will be in touch shortly. In a rush? Call or text for a prompt response.</p>
-          <ul class="contact-details">
-            <li><a href="tel:3039071563">303-907-1563</a></li>
-            <li><a href="mailto:DenverRadonTesting@Gmail.com">DenverRadonTesting@Gmail.com</a></li>
+<!-- ─── TRUST BAR ─────────────────────────────────────────────── -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        NRPP Certified #109551-RT
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        DORA Licensed RME0000042
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Same-Day Results
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        Homes, Schools &amp; Commercial
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        No Mitigation Upsells
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── WHY CHOOSE US ─────────────────────────────────────────── -->
+<section class="why-us" id="why">
+  <div class="why-grid-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-label">Why We're Different</span>
+      <h2 class="section-title" style="color:#fff">Testing you can actually trust</h2>
+      <p class="section-desc">Most radon companies also sell mitigation systems — which creates a conflict of interest. We test only, so your results are never influenced by a sales motive.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon" style="background:rgba(18,193,122,0.15)">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#12c17a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Same-Day Results</h3>
+        <p>Using the latest RADStar continuous monitors, we can deliver results the same day we pick up equipment — ideal for real estate transactions with tight timelines.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-icon" style="background:rgba(249,115,22,0.15)">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>No Mitigation Upsells</h3>
+        <p>We are not affiliated with any mitigation company. Our only business is testing, which means your results are unbiased — full stop. You get the truth about your home.</p>
+      </div>
+
+      <div class="why-card reveal">
+        <div class="why-icon" style="background:rgba(18,193,122,0.12)">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#12c17a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>All Building Types</h3>
+        <p>From single-family homes to schools, daycares, apartment complexes and commercial buildings — our equipment and methods scale to any size property.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ──────────────────────────────────────────────── -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-label">Testing Methods</span>
+      <h2 class="section-title">The right tool for every property</h2>
+      <p class="section-desc">We use two EPA-accepted testing methodologies, chosen based on property type, timeline, and the most accurate results for your situation.</p>
+    </div>
+
+    <div class="service-grid">
+      <!-- Continuous Monitors -->
+      <div class="service-card reveal">
+        <div class="service-card-header">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3>Continuous Radon Monitors</h3>
+          <span class="service-tag">Recommended for Real Estate</span>
+        </div>
+        <div class="service-card-body">
+          <p>Our RADStar RS800 continuous electronic monitors are the most advanced short-term testing devices available. They record hourly radon readings throughout the test period and produce a tamper-evident report — giving buyers, sellers, and agents complete confidence in the results.</p>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Results available same day after pickup
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Tamper-evident, hourly data logging
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              NRPP &amp; EPA protocol compliant
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Ideal for buyers, sellers &amp; inspectors
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Digital report delivered via email
+            </li>
           </ul>
         </div>
-        <form class="contact-form" id="contact-form" novalidate>
+      </div>
+
+      <!-- Liquid Scintillation -->
+      <div class="service-card reveal">
+        <div class="service-card-header">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v11m0 0H5m4 0h10m0-11v11m0 0H5"/>
+            </svg>
+          </div>
+          <h3>Liquid Scintillation Vials</h3>
+          <span class="service-tag">Large &amp; Multi-Unit Properties</span>
+        </div>
+        <div class="service-card-body">
+          <p>For schools, daycares, apartment buildings, and large commercial properties that require testing across multiple zones, liquid scintillation vials offer greater accuracy and scalability than traditional charcoal canisters. We deploy and retrieve vials at multiple points throughout the property.</p>
+          <ul class="feature-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              More accurate than charcoal alternatives
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Scalable to any number of test zones
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Schools, daycares &amp; apartment complexes
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Laboratory-analyzed for precision
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Comprehensive multi-zone report
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ──────────────────────────────────────────── -->
+<section class="how-it-works" id="how">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-label">The Process</span>
+      <h2 class="section-title">Testing in 4 simple steps</h2>
+      <p class="section-desc">From scheduling to final report, the entire process is designed to be fast and friction-free.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="steps-connector" aria-hidden="true"></div>
+
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3>Schedule</h3>
+        <p>Call, text, or fill out our form. We'll confirm a deployment time that works for your schedule — often same or next day.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h3>Deploy</h3>
+        <p>We place certified monitors at lowest livable level per EPA guidelines. The 48-hour test runs unattended.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h3>Retrieve</h3>
+        <p>After the test period, we collect the equipment and process the data on-site or at our lab.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">4</div>
+        <h3>Report</h3>
+        <p>Receive a professional, NRPP-certified report via email — same day pickup for continuous monitors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ──────────────────────────────────────────────────── -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content reveal">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title">Testing is all we do — and that matters.</h2>
+        <p class="section-desc">Denver Radon Testing was founded by a home inspection professional who saw how often radon testing was treated as an afterthought — or worse, as a sales funnel for mitigation services.</p>
+        <p class="section-desc" style="margin-top:1rem">We built our company around one principle: unbiased, certified testing that homeowners and inspectors can stake their confidence on.</p>
+
+        <div class="about-highlight">
+          <svg class="about-highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+          <p><strong>Why independence matters:</strong> A company that also sells mitigation has a financial incentive to find elevated radon levels. We have no such incentive — your result is your result.</p>
+        </div>
+
+        <div class="about-cta">
+          <a href="#contact" class="btn btn-primary">Schedule a Test</a>
+          <a href="tel:303-907-1563" class="btn-outline">Call 303-907-1563</a>
+        </div>
+      </div>
+
+      <div class="about-visual reveal">
+        <div class="fact-card">
+          <span class="fact-label">Background</span>
+          <p class="fact-value">Founded from a home inspection background — we understand the real estate transaction process and work efficiently with agents, buyers, and sellers.</p>
+        </div>
+        <div class="fact-card fact-card-accent">
+          <span class="fact-label">Our Commitment</span>
+          <p class="fact-value">Radon testing is our sole focus. You can be confident knowing we are not trying to sell you a mitigation system based on your results.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-label">Service Area</span>
+          <p class="fact-value">Denver Metro and surrounding Front Range communities. Call to confirm availability in your area — we travel for large commercial projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CERTIFICATIONS ─────────────────────────────────────────── -->
+<section class="certifications" id="certifications">
+  <div class="container">
+    <div class="cert-inner">
+      <div class="cert-divider">
+        <span>Credentials &amp; Certifications</span>
+      </div>
+
+      <div class="cert-cards">
+        <div class="cert-card">
+          <div class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>NRPP Certified</h3>
+            <p>National Radon Proficiency Program<br/>Certification #109551-RT</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <div>
+            <h3>Colorado DORA Licensed</h3>
+            <p>Dept. of Regulatory Agencies<br/>License RME0000042</p>
+          </div>
+        </div>
+      </div>
+
+      <p style="font-size:0.8125rem; color:rgba(255,255,255,0.3); text-align:center; max-width:480px">
+        Both credentials are required by the State of Colorado for radon testing professionals. We maintain active certification with ongoing continuing education.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ────────────────────────────────────────────────── -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Schedule your test today</h2>
+        <p class="section-desc">We typically respond within a few hours and can often deploy equipment same or next day. No commitment required to reach out.</p>
+
+        <div class="contact-methods">
+          <a href="tel:303-907-1563" class="contact-method">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.67a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div>
+              <strong>Call or Text</strong>
+              <span>303-907-1563</span>
+            </div>
+          </a>
+
+          <a href="mailto:DenverRadonTesting@Gmail.com" class="contact-method">
+            <div class="contact-method-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <span>DenverRadonTesting@Gmail.com</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <p class="form-title">Request Testing</p>
+        <p class="form-subtitle">Fill out the form and we'll get back to you within a few hours.</p>
+
+        <form id="contact-form" novalidate>
           <div class="form-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+            <label for="name">Your Name <span style="color:#c33">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" required />
           </div>
           <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+            <label for="email">Email <span style="color:#c33">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" autocomplete="email" required />
           </div>
           <div class="form-row">
             <label for="phone">Phone <span class="optional">(optional)</span></label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="303-555-0100">
+            <input type="tel" id="phone" name="phone" placeholder="303-555-0100" autocomplete="tel" />
           </div>
           <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your property and testing needs"></textarea>
+            <label for="message">Property &amp; Questions <span style="color:#c33">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us about the property — type, address, timeline, and any questions you have." required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Send message</button>
+          <button type="submit" class="btn btn-primary btn-full">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Request
+          </button>
           <p class="form-note" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="logo-text">Denver Radon Testing</span>
-        <p>Professional radon testing for Denver and surrounding areas.</p>
-      </div>
-      <div class="footer-links">
-        <a href="tel:3039071563">303-907-1563</a>
-        <a href="mailto:DenverRadonTesting@Gmail.com">DenverRadonTesting@Gmail.com</a>
-      </div>
-      <p class="footer-copy">&copy; <span id="year"></span> Denver Radon Testing. All rights reserved.</p>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- ─── FOOTER ────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="Denver Radon Testing">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="logo-text">
+            Denver Radon Testing
+            <span>Certified · Licensed · Independent</span>
+          </div>
+        </a>
+        <p class="footer-desc">NRPP Certified and Colorado DORA Licensed radon testing specialists. Independent testing — no mitigation upsells, ever.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Continuous Monitors</a></li>
+          <li><a href="#services">Liquid Scintillation Vials</a></li>
+          <li><a href="#services">Real Estate Testing</a></li>
+          <li><a href="#services">Commercial Properties</a></li>
+          <li><a href="#services">Schools &amp; Daycares</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:303-907-1563">303-907-1563</a></li>
+          <li><a href="mailto:DenverRadonTesting@Gmail.com">DenverRadonTesting@Gmail.com</a></li>
+          <li><a href="#contact">Request Testing</a></li>
+          <li><a href="#certifications">Our Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Denver Radon Testing. All rights reserved.</span>
+      <span>NRPP #109551-RT · DORA RME0000042 · Denver, CO</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
